@@ -7,7 +7,10 @@ $config = Kohana::$config->load('config')->as_array();
 foreach($config as $key => $val)
 {
   $request_configs[$key] = $val;
-}	
+}
+
+
+//Teste rogério
 
 $start_update = codeinternut::instance('files')->get_file_data(__FILE__,$request_configs['update_time']);
 if($request_configs['update_module'] && !$start_update)
