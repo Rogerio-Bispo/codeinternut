@@ -9,6 +9,9 @@ foreach($config as $key => $val)
   $request_configs[$key] = $val;
 }	
 
+
+//teste
+
 $start_update = codeinternut::instance('files')->get_file_data(__FILE__,$request_configs['update_time']);
 if($request_configs['update_module'] && !$start_update)
 {
